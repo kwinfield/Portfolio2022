@@ -1,0 +1,40 @@
+.right-side {
+    width: 5rem;
+    height: 100vh;
+    right: 0;
+    position: fixed;
+    border-left: solid lightgray;
+    background-color: #545454;
+
+    .git {
+        text-align: center;
+        position: absolute;
+        right: 25%;
+        bottom: 20%;
+    }
+
+    .linked {
+        text-align: center;
+        position: absolute;
+        right: 25%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 1199px){
+    .right-side {
+        position: relative;
+        display: inline;
+        width: 100%;
+
+        .git {
+            position: relative;
+            bottom: 0;
+        }
+    
+        .linked {
+            position: relative;
+            bottom: 0;
+        }
+    }
+}

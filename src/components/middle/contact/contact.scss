@@ -1,0 +1,30 @@
+.contact {
+    margin: 0 !important;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid whitesmoke;
+
+    label {
+        color:whitesmoke;
+    }
+
+    .btn {
+        color: whitesmoke;
+    }
+
+    .bi {
+        color: #659797;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1199px){
+    .git .link {
+        display: none;
+    }
+
+}

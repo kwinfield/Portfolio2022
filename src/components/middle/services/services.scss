@@ -1,0 +1,21 @@
+.services {
+    margin: 0 !important;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 15%;
+    padding-top: 170px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid whitesmoke;
+    
+        
+
+        
+}
+
+@media (max-width: 400px){
+    .services {
+        padding-top: 70px;
+    }
+    
+}

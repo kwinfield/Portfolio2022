@@ -1,0 +1,44 @@
+.portfolio {
+    margin: 0 !important;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4%;
+    padding-right: 15%;
+    padding-top: 170px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid whitesmoke;
+
+    
+
+    .card {
+        background-color: #545454;
+        border-color: whitesmoke;
+        img{
+            background-color:white;
+        }
+        .btn {
+            background-color: #659797;
+            border-color: whitesmoke;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .portfolio {
+        padding-right: 4%;
+
+        .card {
+            width:80%;
+            margin-bottom: 50px;
+            text-align: center;
+            margin: 50px auto
+        }
+    }
+    
+}
+@media (max-width: 400px){
+    .portfolio {
+        padding-top: 70px;
+    }
+    
+}
