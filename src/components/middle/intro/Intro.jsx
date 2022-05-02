@@ -8,7 +8,7 @@ const Intro = () => (
         <h1 className="initials">Keith<br></br> Winfield</h1>
             <div className="message">
                 <h1>Web Developer</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac dui quis dui luctus ultricies. Vestibulum lacinia nunc ligula, non tempus neque scelerisque a. Nulla id lacinia felis. Duis at nisi et orci mattis mattis et at velit. Vestibulum tempus ante sit amet augue condimentum dignissim. </p>
+                <p>Front End Web Developer specializing in ReactJS, Website Optimization and Email Marketing.</p>
             </div>
             <a href="#contact" className="btn btn-lg btn-outline-light">Contact Me </a>
         </div>
