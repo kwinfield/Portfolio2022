@@ -11,8 +11,8 @@ const Portfolio = () => (
                     <img className="card-img-top img-fluid" src="/images/remlogo.png" alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">R.E. Michel</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Info</a>
+                        <p className="card-text">Founded in 1935, R.E. Michel is a family business that has more than 290 sales locations coast to coast.</p>
+                        <a href="#" className="btn btn-primary" data-toggle="modal" data-target="#remodal">Project Info</a>
                     </div>
                 </div>
             </div>
@@ -21,15 +21,15 @@ const Portfolio = () => (
                     <img className="card-img-top img-fluid" src="/images/airtemp.jpg" alt="Card image cap" />
                     <div className="card-body">
                         <h5 className="card-title">Airtemp</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">More Info</a>
+                        <p className="card-text">Airtemp indoor comfort systems are designed, assembled and repeatedly and thoroughly tested in North America. </p>
+                        <a href="#" className="btn btn-primary" data-toggle="modal" data-target="#atmodal">Project Info</a>
                     </div>
                     {/* modal 1 */}
-                    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal fade" id="remodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
                             <div className="modal-header">
-                                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 className="modal-title" id="exampleModalLabel">R.E. Michel</h5>
                                 <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
@@ -45,7 +45,7 @@ const Portfolio = () => (
                         </div>
                     </div>
                     {/* modal 2 */}
-                    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal fade" id="atmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog" role="document">
                             <div className="modal-content">
                             <div className="modal-header">
