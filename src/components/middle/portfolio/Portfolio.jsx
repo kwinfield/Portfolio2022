@@ -15,7 +15,7 @@ const Portfolio = () => (
                         <h5>Highlights</h5>
                         <ul className="text-light">
                             <li>Upgraded to fully responsive</li>
-                            <li>SEO Improvements</li>
+                            <li>SEO Improvements and Management</li>
                             <li>Ongoing Theme Maintenance & Support</li>
                         </ul>
                         <a href="https://www.remichel.com" className="btn btn-primary" target="_blank">Live Project</a>
@@ -31,7 +31,7 @@ const Portfolio = () => (
                         <h5>Highlights</h5>
                         <ul className="text-light">
                             <li>Upgraded to fully responsive</li>
-                            <li>SEO Improvements</li>
+                            <li>SEO Improvements and Management</li>
                             <li>Ongoing Theme Maintenance & Support</li>
                         </ul>
                         <a href="https://airtemp.com/" className="btn btn-primary" target='_blank'>Live Project</a>
