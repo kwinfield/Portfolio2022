@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithubSquare } from 'react-icons/fa';
 import "./navbar.scss";
 
 const menu = ["home", "about", "services", "portfolio", "contact"];
@@ -20,8 +19,10 @@ function Navbar (){
             <div className="nav2">
                 <nav class="navbar">
                     <a class="navbar-brand" href="#">KW</a>
-                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i class="bi bi-list"></i></span></button>
+                    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon3"><span></span><span></span><span></span></div>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                         <ul className="navbar-nav mr-auto">
                             {menu.map((item)=> (<li className="nav-item"><a className="nav-link" href={`#${item}`}>{item}</a></li>))}
