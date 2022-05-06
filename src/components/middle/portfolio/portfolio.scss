@@ -10,35 +10,20 @@
 
     
 
-    .card {
-        background-color: #545454;
-        border-color: whitesmoke;
-        img{
-            background-color:white;
-        }
-        .btn {
-            background-color: #659797;
-            border-color: whitesmoke;
-        }
-    }
+
 }
 
 @media (max-width: 991px){
     .portfolio {
         padding-right: 4%;
 
-        .card {
-            width:80%;
-            margin-bottom: 50px;
-            text-align: center;
-            margin: 50px auto
-        }
+
     }
-    
+
 }
 @media (max-width: 400px){
     .portfolio {
         padding-top: 70px;
     }
-    
+
 }

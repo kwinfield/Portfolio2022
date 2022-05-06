@@ -17,7 +17,7 @@ function App(){
                 <div className="col-lg-6">
                     <LeftSide />
                 </div>
-                
+
                 <div className="col-lg-6 middle">
                     <Intro />
                     <About />
@@ -26,9 +26,9 @@ function App(){
                     <Contact />
                 </div>
             </div>
-            
+
         </div>
-        
+
         )
 }
 
