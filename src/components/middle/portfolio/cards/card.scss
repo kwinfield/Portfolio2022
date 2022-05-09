@@ -30,9 +30,23 @@
 .carousel-control-prev,
 .carousel-control-next {
   background-color: #959595;
-  width: 15vh;
+  width: 5vh;
   height: 5vh;
+  line-height: 5vh;
   padding: 20px;
   top: 45%;
   transform: translateY(-50%);
+}
+
+@media (min-width: 991px){
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #959595;
+    width: 15vh;
+    height: 5vh;
+    padding: 20px;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
 }

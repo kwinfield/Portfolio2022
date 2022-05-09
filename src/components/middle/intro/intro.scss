@@ -7,15 +7,15 @@
 	overflow: visible;
 	height: 100vh;
     border-bottom: 1px solid whitesmoke;
-    
-       
+
+
 
     .opening {
         width: 80%;
         margin-top: 25%;
         margin-left: 20px;
         position: relative;
-        
+
 
         .initials {
             position: relative;
@@ -52,7 +52,10 @@
             border-bottom-right-radius: 100px;
 
         }
-        
+        .sm-btn {
+          display: none;
+        }
+
     }
 
 }
@@ -60,7 +63,7 @@
 
 
 
-@media (max-width: 991px){
+@media  (max-width: 991px){
     .intro {
         margin: 0;
         padding-top: 0;
@@ -70,8 +73,8 @@
         overflow: visible;
         height: 300px;
         border-bottom: 1px solid whitesmoke;
-        
-                
+
+
         .opening{
             top: -20px;
             width: 100%;
@@ -102,10 +105,12 @@
             }
             .message {
                 display: none;
+
             }
-    
+
+
             .btn {
-                margin-top: -50px;
+                margin-top: 0px !important;
                 padding: 15px;
                 border-color: whitesmoke;
                 border-top-left-radius: 100px;
@@ -113,14 +118,20 @@
                 border-top-right-radius: 100px;
                 border-bottom-right-radius: 100px;
             }
+            .big-btn {
+              display: none;
+            }
+            .sm-btn {
+              display: inline-block;
+            }
         }
-        
+
     }
-    
+
 }
 
 @media (max-width: 400px){
-    .intro {       
+    .intro {
         .opening{
             top: -50px;
             .initials {
@@ -128,17 +139,18 @@
                 padding-top: 50px;
                 font-size: 40px;
             }
-            .btn {
-                margin-top: 0;
+
+            .big-btn {
+              display: none;
             }
         }
-        
+
     }
-    
+
 }
 
 @media (max-width: 400px){
-    .intro {        
+    .intro {
         .opening{
             top: -30px;
             .initials {
@@ -147,8 +159,7 @@
                 font-size: 30px;
             }
         }
-        
-    }
-    
-}
 
+    }
+
+}
