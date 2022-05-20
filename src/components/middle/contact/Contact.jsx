@@ -41,7 +41,7 @@ const Contact = () => {
                             <textarea name="message" className="form-control md-textarea"/>
                         </div>
                         <div>
-                            <a className="btn btn-outline-light" type="submit" value="Send">Send</a>
+                            <button className="btn btn-outline-light" type="submit" value="Send">Send</button>
                         </div>
                     </form>
                 </div>
