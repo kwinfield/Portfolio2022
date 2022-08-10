@@ -21,7 +21,7 @@ const projects = [
     imgURL: "/images/pbl-logo.png",
     description: "The Photo Booth Lady is a family owned business, based in the Carolinas, that supply photo booths to parties, weddings and other functions.",
     highlights: ["Designed and coded completely in ReactJS", "SEO Setup and Management", "Ongoing Theme Maintenance & Support"],
-    link: "https://react-tbl-app.herokuapp.com/"
+    link: "https://boiling-oasis-36668.herokuapp.com/"
   }
 ]
 
