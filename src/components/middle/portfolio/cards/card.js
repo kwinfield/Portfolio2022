@@ -17,7 +17,7 @@ function Card() {
         {projects.map(project => {
           return <Carousel.Item>
                   <div className="card">
-                      <img className="card-img-top img-fluid" src={project.imgURL} alt="Card image cap" />
+                      <img className="card-img-top img-fluid" src={project.imgURL} alt="Card image cap" style={{ height: '12.5rem', width: '12.5rem'}} />
                       <div className="card-body">
                           <h5 className="card-title">{project.name}</h5>
                           <p className="card-text">{project.description}</p>
