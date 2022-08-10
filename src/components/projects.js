@@ -20,7 +20,7 @@ const projects = [
     name: "The Photo Booth Lady",
     imgURL: "/images/pbl-logo.png",
     description: "The Photo Booth Lady is a family owned business, based in the Carolinas, that supply photo booths to parties, weddings and other functions.",
-    highlights: ["Designed and coded completely in ReactJS", "SEO Setup and Management", "Ongoing Theme Maintenance & Support"],
+    highlights: ["Designed and coded completely in PHP and MySql using the Laravel framework", "SEO Setup and Management", "Ongoing Theme Maintenance & Support"],
     link: "https://boiling-oasis-36668.herokuapp.com/"
   }
 ]
