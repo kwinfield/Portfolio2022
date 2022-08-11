@@ -10,7 +10,7 @@ function Portfolio(){
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <h5>Latest Works</h5>
-      <div className="container col-12 col-md-10">
+      <div className="container col-12 mt-5">
         <Card />
       </div>
     </div>
