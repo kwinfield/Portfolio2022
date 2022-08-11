@@ -21,7 +21,7 @@ function Card() {
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                        <h5 class="modal-title" id="exampleModalLongTitle">{project.name}</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                         </button>
@@ -33,7 +33,6 @@ function Card() {
                                                     <img className="card-img-top img-fluid pt-2" src={project.beforeAfter} alt="Card image cap" />
                                                 </div>
                                             </div>
-                                            <h5>{project.name}:</h5>
                                             <p className="card-text text-dark">{project.description}</p>
                                             <h5>Work Done:</h5>
                                             <ul className="text-dark">
