@@ -1,7 +1,6 @@
 import React from "react";
 import "./portfolio.scss";
 import Card from './cards/card2';
-import projects from '../../projects.js';
 import './cards/card.scss';
 
 function Portfolio(){

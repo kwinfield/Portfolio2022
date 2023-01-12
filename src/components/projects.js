@@ -27,22 +27,11 @@ const projects = [
     imgURL: "/images/pbl-logo.jpg",
     description: "The Photo Booth Lady is a family owned business, based in the Carolinas, that supply photo booths to parties, weddings and other functions.",
     highlights: ["Full stack app coded completely in PHP and MySql using the Laravel framework from scratch", "SEO Setup and Management", "Ongoing Theme Maintenance & Support"],
-    link: "https://boiling-oasis-36668.herokuapp.com/",
+    link: "http://www.thephotoboothlady.com/",
     beforeAfter: "/images/pbl_before_after.jpg",
     modalIDbutton: '#pbl',
     modalID: 'pbl'
   },
-  {
-    id: 3,
-    name: "Evolve - M. Pennington",
-    imgURL: "/images/evolve-logo.jpg",
-    description: "\"EVOLVE...From Heart Breaks to Hearts Healed\" is a book written by a client.",
-    highlights: ["Full stack Ecommerce app coded completely in PHP and MySql using the Laravel framework from scratch", "SEO Setup and Management", "Ongoing Theme Maintenance & Support"],
-    link: "http://www.michellewpennington.com/",
-    beforeAfter: "/images/evolve_before_after.jpg",
-    modalIDbutton: '#evolve',
-    modalID: 'evolve'
-  }
 ]
 
 export default projects;
