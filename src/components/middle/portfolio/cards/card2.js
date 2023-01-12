@@ -6,7 +6,7 @@ function Card() {
   return (
     <div className='row'>
         {projects.map(project => {
-            return <div className="card col-12 col-xl-4 mb-2">
+            return <div className="card col-12 col-xl-3 mb-2">
                         <img className="card-img-top img-fluid pt-2" src={project.imgURL} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title text-center">{project.name}</h5>
