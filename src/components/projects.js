@@ -2,6 +2,8 @@ const projects = [
   {
     id: 1,
     name: "R.E. Michel",
+    staticImg = '/images/static.png',
+    animatedGif = '/images/test_site_gif.gif',
     imgURL: "/images/remlogo.png",
     description: "Founded in 1935, R.E. Michel is a family business that has more than 290 sales locations coast to coast.",
     highlights: ["Upgraded Ecommerce App to fully responsive", "SEO Improvements and Management", "Ongoing Theme Maintenance & Support"],

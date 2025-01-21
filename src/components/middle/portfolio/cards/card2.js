@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import projects from '../../../projects.js';
 import './card.scss';
 
 function Card() {
     const [isHovered, setIsHovered] = useState(false);
-    const staticImg = '/images/static.png';
-    const animatedGif = '/images/test_site_gif.gif';
   return (
     <div className='row'>
         {projects.map(project => {
@@ -13,7 +11,7 @@ function Card() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             >
-                        <img className="card-img-top img-fluid pt-2" src={isHovered ? animatedGif : staticImg} alt="Card image cap" />
+                        <img className="card-img-top img-fluid pt-2" src={isHovered ? project.animatedGif : project.staticImg} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title text-center">{project.name}</h5>
                             <div className="text-center">
