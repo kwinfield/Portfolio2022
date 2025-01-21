@@ -3,11 +3,17 @@ import projects from '../../../projects.js';
 import './card.scss';
 
 function Card() {
+    const [isHovered, setIsHovered] = useState(false);
+    const staticImg = '/images/static.png';
+    const animatedGif = '/images/test_site_gif.gif';
   return (
     <div className='row'>
         {projects.map(project => {
-            return <div className="card col-12 col-xl-3 mb-2">
-                        <img className="card-img-top img-fluid pt-2" src="/images/test_site_gif.gif" alt="Card image cap" />
+            return <div className="card col-12 col-xl-3 mb-2"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            >
+                        <img className="card-img-top img-fluid pt-2" src={isHovered ? animatedGif : staticImg} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title text-center">{project.name}</h5>
                             <div className="text-center">
