@@ -11,7 +11,7 @@ function Card() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             >
-                        <img className="card-img-top img-fluid pt-2" src={isHovered ? project.animatedGif : project.staticImg} alt="Card image cap" />
+                        <img className="card-img-top img-fluid pt-2" src={isHovered ? project.animatedGif : project.staticImg} alt="Card image cap" style={{ height: '12.5rem', width: '12.5rem'}}/>
                         <div className="card-body">
                             <h5 className="card-title text-center">{project.name}</h5>
                             <div className="text-center">
