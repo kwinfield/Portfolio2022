@@ -7,10 +7,10 @@ const About = () => (
         <h5>My Story</h5>
         <div className="row pt-5">
             <div className="col-md-6">
-                <p>I am a Web Developer out of Baltimore, Maryland. I deliver strategic insight, hands-on design, and frontend development using modern frontend web technologies. Working as a Web Manager for a nationwide wholesale supplier has also provided me with extensive experience running digital marketing campaigns using technologies like Google Analytics, Google Adsense, and Mailchimp.</p>
+                <p>I’m a Web Developer based in Baltimore, Maryland, specializing in user-centric design and modern front-end technologies. My role as a Web Manager for a nationwide wholesale supplier has given me extensive experience running digital marketing campaigns—leveraging tools like Google Analytics, Google Ads, and Mailchimp—to drive engagement and conversions.</p>
             </div>
             <div className="col-md-6">
-                <p>My background in digital, direct, and customer relationship marketing goes back as far as the early 2000 when I was a young creator for small start-ups interested in creating a web presence. It has always been a hobby of mind to take things apart and build them again. That inquisitiveness has helped me learn and continue to learn technologies that interest me.  ​</p>
+                <p>My background in digital, direct, and customer relationship marketing dates back to the early 2000s, when I was a young creator helping small start-ups establish their web presence. I’ve always enjoyed taking things apart and rebuilding them—an inquisitiveness that continues to drive my passion for learning emerging technologies. ​</p>
             </div>
         </div>
     </div>
