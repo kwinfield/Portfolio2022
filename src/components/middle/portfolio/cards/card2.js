@@ -10,9 +10,11 @@ function Card() {
     <div className='row'>
         {projects.map(project => {
             return <div>
-                        <div className="card col-12 col-xl-3 mb-2">
-                            <img onMouseEnter={() => setFirstImageIsHovering(true)} onMouseLeave={() => setFirstImageIsHovering(false)} className="card-img-top img-fluid pt-2" src={firstImageisHovering ? '/images/test_site_gif.gif': '/images/static.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
-                            <div className="card-body">
+                        <div className="row col-12 mb-2">
+                            <div className="col-6 mb-2">
+                                <img onMouseEnter={() => setFirstImageIsHovering(true)} onMouseLeave={() => setFirstImageIsHovering(false)} className="card-img-top img-fluid pt-2" src={firstImageisHovering ? '/images/remichel_site_gif.gif': '/images/static.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
+                            </div>
+                            <div className="col-6 mb-2">
                                 <h5 className="card-title text-center">{project.name}</h5>
                                 <div className="text-center">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target={project.modalIDbutton}>
