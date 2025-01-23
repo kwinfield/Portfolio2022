@@ -17,7 +17,7 @@ function Card() {
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             >
-                        <img onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="card-img-top img-fluid pt-2" src={setIsHovering ? project.animatedGif: project.staticImg} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
+                        <img onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="card-img-top img-fluid pt-2" src={isHovering ? project.animatedGif: project.staticImg} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
                         <div className="card-body">
                             <h5 className="card-title text-center">{project.name}</h5>
                             <div className="text-center">
