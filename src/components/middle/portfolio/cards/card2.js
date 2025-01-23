@@ -10,12 +10,13 @@ function Card() {
     <div className='row'>
         {projects.map(project => {
             return <div>
-                        <div className="row col-12 mb-2">
+                        <div className="row col-10 mb-2">
                             <div className="col-6 mb-2">
                                 <img onMouseEnter={() => setFirstImageIsHovering(true)} onMouseLeave={() => setFirstImageIsHovering(false)} className="card-img-top img-fluid pt-2" src={firstImageisHovering ? '/images/remichel_site_gif.gif': '/images/static.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
                             </div>
                             <div className="col-6 mb-2">
-                                <h5 className="card-title text-center">{project.name}</h5>
+                                <h5 className="card-title text-center">R.E. Michel Company</h5>
+                                <p>R.E. Michel’s B2B e-commerce site is a PCI-compliant powerhouse, serving HVAC professionals nationwide with thousands of daily visitors. Our platform provides secure transactions, real-time inventory, and streamlined ordering—ensuring efficiency and reliability.</p>
                                 <div className="text-center">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target={project.modalIDbutton}>
                                     Project Info
