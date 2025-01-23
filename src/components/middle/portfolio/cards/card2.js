@@ -13,10 +13,7 @@ function Card() {
   return (
     <div className='row'>
         {projects.map(project => {
-            return <div className="card col-12 col-xl-3 mb-2"
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-            >
+            return <div className="card col-12 col-xl-3 mb-2">
                         <img onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="card-img-top img-fluid pt-2" src={isHovering ? project.animatedGif: project.staticImg} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
                         <div className="card-body">
                             <h5 className="card-title text-center">{project.name}</h5>
