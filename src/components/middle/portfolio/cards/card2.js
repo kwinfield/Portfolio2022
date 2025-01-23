@@ -3,19 +3,15 @@ import projects from '../../../projects.js';
 import './card.scss';
 
 function Card() {
-    const [isHovering, setIsHovering] = useState(false);
-    const handleMouseOver = () => {
-        setIsHovering(true);
-      };
-      const handleMouseOut = () => {
-        setIsHovering(false);
-      };
+    const [firstImageisHovering, setFirstImageIsHovering] = useState(false);
+    const [secondImageisHovering, setSecondImageIsHovering] = useState(false);
+    const [thirdImageisHovering, setThirdImageIsHovering] = useState(false);
   return (
     <div className='row'>
         {projects.map(project => {
             return <div>
                         <div className="card col-12 col-xl-3 mb-2">
-                            <img onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="card-img-top img-fluid pt-2" src={isHovering ? '/images/test_site_gif.gif': '/images/static.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
+                            <img onMouseEnter={() => setFirstImageIsHovering(true)} onMouseLeave={() => setFirstImageIsHovering(false)} className="card-img-top img-fluid pt-2" src={firstImageisHovering ? '/images/test_site_gif.gif': '/images/static.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
                             <div className="card-body">
                                 <h5 className="card-title text-center">{project.name}</h5>
                                 <div className="text-center">
@@ -59,7 +55,7 @@ function Card() {
                             </div>
                         </div>
                         <div className="card col-12 col-xl-3 mb-2">
-                            <img onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="card-img-top img-fluid pt-2" src={isHovering ? '/images/airtemp_site_gif.gif': '/images/airtemp_cover.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
+                            <img onMouseEnter={() => setSecondImageIsHovering(true)} onMouseLeave={() => setSecondImageIsHovering(false)} src={secondImageisHovering ? '/images/airtemp_site_gif.gif': '/images/airtemp_cover.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
                             <div className="card-body">
                                 <h5 className="card-title text-center">{project.name}</h5>
                                 <div className="text-center">
@@ -103,7 +99,7 @@ function Card() {
                             </div>
                         </div>
                         <div className="card col-12 col-xl-3 mb-2">
-                            <img onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="card-img-top img-fluid pt-2" src={isHovering ? '/images/pg_site_gif.gif': '/images/pb_cover.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
+                            <img onMouseEnter={() => setThirdImageIsHovering(true)} onMouseLeave={() => setThirdImageIsHovering(false)} src={thirdImageisHovering ? '/images/pg_site_gif.gif': '/images/pb_cover.png'} alt="Card image cap" style={{ height: '10rem', width: '12.5rem'}}/>
                             <div className="card-body">
                                 <h5 className="card-title text-center">{project.name}</h5>
                                 <div className="text-center">
