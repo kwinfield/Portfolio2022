@@ -7,9 +7,9 @@ function Portfolio(){
 
   return(
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <h5>Latest Works</h5>
-      <div className="container col-12 mt-5">
+      <h1>Professional Projects</h1>
+      <h5>I contributed to a variety of cross-functional initiatives, leveraging teamwork and communication skills to develop, refine, and successfully deliver each project on time and to specification.</h5>
+      <div className="col-12 mt-5 text-center p-0">
         <Card />
       </div>
     </div>
