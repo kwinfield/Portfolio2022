@@ -15,7 +15,7 @@ function Card() {
                     <h5 className='text-center'>R.E. Michel Company</h5>
                     <p className='text-center container'>R.E. Michel’s B2B e-commerce site is a PCI-compliant powerhouse, serving HVAC professionals nationwide with thousands of daily visitors. This web application provides secure transactions, real-time inventory, and streamlined ordering—ensuring efficiency and reliability.</p>
                     <div className="text-center">
-                        <button type="button" class="btn" data-toggle="modal" data-target='#remichel'>
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target='#remichel'>
                         Project Info
                         </button>
                     </div>
@@ -48,7 +48,7 @@ function Card() {
                             </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ function Card() {
                     <h5 className="text-center">Airtemp</h5>
                     <p className='text-center container'>Airtemp indoor comfort systems offers a user-friendly interface for homeowners and businesses to search, research, and connect with certified dealers for HVAC installations. Thousands of visitors daily rely on the web application to find the perfect indoor comfort solution.</p>
                     <div className="text-center">
-                        <button type="button" class="btn" data-toggle="modal" data-target='#airtemp'>
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target='#airtemp'>
                         Project Info
                         </button>
                     </div>
@@ -95,7 +95,7 @@ function Card() {
                             </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ function Card() {
                     <h5 className="text-center">The Photo Booth Lady</h5>
                     <p className="text-center container">This web application provides prices of photo booth rentals for parties, weddings, and more. Read real reviews, see testimonials, and easily connect with the application manager to book a booth for your next unforgettable event!</p>
                     <div className="text-center">
-                        <button type="button" class="btn" data-toggle="modal" data-target='#pbl'>
+                        <button type="button" class="btn btn-light" data-toggle="modal" data-target='#pbl'>
                         Project Info
                         </button>
                     </div>
@@ -142,7 +142,7 @@ function Card() {
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>

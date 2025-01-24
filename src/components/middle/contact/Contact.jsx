@@ -51,7 +51,7 @@ const Contact = () => {
                             <p>Baltimore, MD</p>
                         </li>
 
-                        <li><i className="bi bi-envelope"></i>
+                        <li><a href = 'mailto:keith.r.winfield@gmail.com' ><i className="bi bi-envelope"></i></a>
                             <p>keith.r.winfield@gmail.com</p>
                         </li>
                         <div className="row justify-content-center">
@@ -59,7 +59,7 @@ const Contact = () => {
                                 <a href="https://github.com/kwinfield" target="_blank"><i class="bi bi-github"></i></a> 
                             </div>
                             <div className="linked col-4">
-                                <a href="https://www.linkedin.com/in/keith-winfield/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/keith-winfield-jr/" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
                     </ul>
