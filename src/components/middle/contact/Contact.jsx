@@ -4,23 +4,58 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-  const sendEmail = async (e) => {
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validateForm = () => {
+    let newErrors = {};
+
+    if (!formData.name) {
+      newErrors.name = 'Name is required';
+    }
+
+    if (!formData.email) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Invalid email address';
+    }
+
+    if (!formData.message) {
+      newErrors.message = 'Message is required';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    try {
-      await emailjs.sendForm('service_1wl4qzb', 'template_77lb77p', form.current, 'do-K33cbp_yXZbBRG');
-      // Reset form fields after successful submission
-      console.log('Success!');
-      alert('Sent!')
-      setName('');
-      setEmail('');
-      setMessage('');
-    } catch (error) {
-      console.error('Error sending email:', error);
+    if (validateForm()) {
+      emailjs.sendForm(
+        'service_1wl4qzb', 
+        'template_77lb77p', 
+        e.target, 
+        'do-K33cbp_yXZbBRG' 
+      )
+        .then((result) => {
+          alert('Message sent successfully!', result.text);
+          // Reset the form
+          setFormData({ name: '', email: '', message: '' });
+          setErrors({});
+        })
+        .catch((error) => {
+          console.error('Error sending message:', error);
+        });
     }
   };
 
@@ -43,18 +78,21 @@ const Contact = () => {
         <section className="mb-4">
             <div className="row">
                 <div className="col-md-6">
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form ref={form} onSubmit={handleSubmit}>
                         <div className="field mb-2">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} className="form-control md-textarea"/>
+                            <label htmlFor="name">Name:</label>
+                            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="form-control md-textarea"/>
+                            {errors.name && <span className="error text-danger">{errors.name}</span>}
                         </div>
                         <div className="field mb-2">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control md-textarea"/>
+                            <label htmlFor="email">Email:</label>
+                            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="form-control md-textarea"/>
+                            {errors.email && <span className="error text-danger">{errors.email}</span>}
                         </div>
                         <div className="field mb-2">
-                            <label for="message">message</label>
-                            <textarea type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} className="form-control md-textarea"/>
+                            <label htmlFor="message">Message:</label>
+                            <textarea id="message" name="message" value={formData.message} onChange={handleChange} className="form-control md-textarea"/>
+                            {errors.message && <span className="error text-danger">{errors.message}</span>}
                         </div>
                         <div>
                             <button className="btn btn-outline-light" type="submit" id="button" value="Send Email" >Send</button>
