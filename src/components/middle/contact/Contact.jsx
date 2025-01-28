@@ -1,29 +1,66 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./contact.scss";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const form = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_1wl4qzb', 'template_77lb77p', form.current, 'do-K33cbp_yXZbBRG')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    try {
+      await emailjs.sendForm('service_1wl4qzb', 'template_77lb77p', form.current, 'do-K33cbp_yXZbBRG');
+      // Reset form fields after successful submission
+      console.log('Success!');
+      alert('Sent!')
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
   };
+
+//   const sendEmail = async (e) => {
+//     e.preventDefault();
+
+//     emailjs.sendForm('service_1wl4qzb', 'template_77lb77p', form.current, 'do-K33cbp_yXZbBRG')
+//       .then((result) => {
+//           console.log('Success!');
+//       }, (error) => {
+//           console.log('Failed!');
+//       });
+//   };
 
   return (
     <div id='contact' className='contact'>
+        
         <h1>Contact Me</h1>
         <h5>Let's Talk</h5>
         <section className="mb-4">
             <div className="row">
                 <div className="col-md-6">
                     <form ref={form} onSubmit={sendEmail}>
+                        <div className="field mb-2">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} className="form-control md-textarea"/>
+                        </div>
+                        <div className="field mb-2">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control md-textarea"/>
+                        </div>
+                        <div className="field mb-2">
+                            <label for="message">message</label>
+                            <textarea type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} className="form-control md-textarea"/>
+                        </div>
+                        <div>
+                            <button className="btn btn-outline-light" type="submit" id="button" value="Send Email" >Send</button>
+                        </div>
+                    </form>
+                    {/* <form ref={form} onSubmit={sendEmail}>
                         <div className="mb-2">
                             <label>Name</label><br/>
                             <input type="text" name="user_name" className="form-control md-textarea"/>
@@ -43,7 +80,7 @@ const Contact = () => {
                         <div>
                             <button className="btn btn-outline-light" type="submit" value="Send">Send</button>
                         </div>
-                    </form>
+                    </form> */}
                 </div>
                 <div className="col-md-6 text-center">
                     <ul className="list-unstyled">
