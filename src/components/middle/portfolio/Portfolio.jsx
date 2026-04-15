@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.scss";
 import Card from './cards/card2';
 import './cards/card.scss';
+import PromotionEmail from "./cards/email";
 
 function Portfolio(){
 

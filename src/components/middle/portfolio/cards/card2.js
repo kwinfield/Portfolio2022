@@ -101,53 +101,6 @@ function Card() {
                     </div>
                 </div>
             </div>
-            <div className="row col-12 mb-5">
-                <div className="col-12 col-md-6 col-lg-12">
-                    <img className="card-img-top img-fluid pt-2" onMouseEnter={() => setThirdImageIsHovering(true)} onMouseLeave={() => setThirdImageIsHovering(false)} src={thirdImageisHovering ? '/images/pg_site_gif.gif': '/images/pb_cover.png'} alt="Card image cap" style={{ height: '20rem', width: '22.5rem'}}/>
-                </div>
-                <div className="col-12 col-md-6 col-lg-12 py-4 text-center">
-                    <h5 className="text-center">The Photo Booth Lady</h5>
-                    <p className="text-center container">This web application provides prices of photo booth rentals for parties, weddings, and more. Read real reviews, see testimonials, and easily connect with the application manager to book a booth for your next unforgettable event!</p>
-                    <div className="text-center">
-                        <button type="button" class="btn btn-light" data-toggle="modal" data-target='#pbl'>
-                        Project Info
-                        </button>
-                    </div>
-                </div>
-                {/* <!-- Modal --> */}
-                <div class="modal fade" id='pbl' tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">"The Photo Booth Lady"</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div>
-                                    <div className="row">
-                                        <div className='col-10 mx-auto mb-5'>
-                                            <img className="card-img-top img-fluid pt-2" src="/images/pbl_before_after.jpg" alt="Card image cap" />
-                                        </div>
-                                    </div>
-                                    <p className="card-text text-dark">"The Photo Booth Lady is a family owned business, based in the Carolinas, that supply photo booths to parties, weddings and other functions."</p>
-                                    <h5>Work Done:</h5>
-                                    <ul className="text-dark">
-                                        <li>"Full stack app coded completely in PHP and MySql using the Laravel framework from scratch"</li>
-                                        <li>"SEO Setup and Management"</li>
-                                        <li>"Ongoing Theme Maintenance & Support"</li>
-                                    </ul> 
-                                    <a href="http://www.thephotoboothlady.com/" className="btn btn-light" target="_blank" rel="noreferrer">Live Project</a>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
   );
 }
