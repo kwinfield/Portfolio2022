@@ -8,7 +8,7 @@ const Services = () => (
         <div className="row">
             <div className="col-12">
                 <div className="mt-5">
-                    <h4 className="mt-3 font-weight-bold">WWordPress & Website Management</h4>
+                    <h4 className="mt-3 font-weight-bold">WordPress & Website Management</h4>
                     <p>I build, update, and maintain WordPress websites, including creating pages, posting blog content, adding images, and ensuring consistent formatting across the site.</p>
                 </div>
             </div>
