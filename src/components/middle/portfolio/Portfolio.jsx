@@ -8,8 +8,8 @@ function Portfolio(){
 
   return(
     <div className="portfolio" id="portfolio">
-      <h1>Professional Projects</h1>
-      <h5>I contributed to a variety of cross-functional initiatives, leveraging teamwork and communication skills to develop, refine, and successfully deliver each project on time and to specification.</h5>
+      <h1>Projects</h1>
+      <h5>Examples of website builds and updates showcasing WordPress, PHP, SEO implementation, and day-to-day website management.</h5>
       <div className="col-12 mt-5 text-center p-0">
         <Card />
       </div>

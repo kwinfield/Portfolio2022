@@ -12,8 +12,8 @@ function Card() {
                     <img className="card-img-top img-fluid pt-2" onMouseEnter={() => setFirstImageIsHovering(true)} onMouseLeave={() => setFirstImageIsHovering(false)} src={firstImageisHovering ? '/images/remichel_site_gif.gif': '/images/static.png'} alt="Card image cap" style={{ height: '20rem', width: '22.5rem'}}/>
                 </div>
                 <div className="col-12 col-md-6 col-lg-12 py-4 text-center">
-                    <h5 className='text-center'>R.E. Michel Company</h5>
-                    <p className='text-center container'>R.E. Michel’s B2B e-commerce site is a PCI-compliant powerhouse, serving HVAC professionals nationwide with thousands of daily visitors. This web application provides secure transactions, real-time inventory, and streamlined ordering—ensuring efficiency and reliability.</p>
+                    <h5 className='text-center'>R.E. Michel Company – B2B E-Commerce Website</h5>
+                    <p className='text-center container'>Maintained and enhanced a high-traffic B2B e-commerce platform serving HVAC professionals nationwide. Focused on website updates, SEO improvements, and ongoing support to ensure performance, usability, and reliability.</p>
                     <div className="text-center">
                         <button type="button" class="btn btn-light" data-toggle="modal" data-target='#remichel'>
                         Project Info
@@ -37,12 +37,14 @@ function Card() {
                                             <img className="card-img-top img-fluid pt-2" src="/images/re_before_after.jpg" alt="Card image cap" />
                                         </div>
                                     </div>
-                                    <p className="card-text text-dark">"Founded in 1935, R.E. Michel is a family business that has more than 290 sales locations coast to coast."</p>
-                                    <h5>Work Done:</h5>
+                                    <h5>Overview:</h5>
+                                    <p className="card-text text-dark">R.E. Michel is a nationwide HVAC distributor with a large-scale e-commerce platform supporting daily transactions, real-time inventory, and customer ordering.</p>
+                                    <h5>Work Performed:</h5>
                                     <ul className="text-dark">
-                                        <li>"Upgraded Ecommerce App to fully responsive"</li>
-                                        <li>"SEO Improvements and Management"</li>
-                                        <li>"Ongoing Theme Maintenance & Support"</li>
+                                        <li>mproved site responsiveness to ensure consistent performance across desktop and mobile devices</li>
+                                        <li>Implemented SEO updates including page structure, metadata, and content optimization</li>
+                                        <li>Provided ongoing website maintenance, theme updates, and support in a live production environment</li>
+                                        <li>Assisted with content updates and front-end adjustments using HTML, CSS, and PHP</li>
                                     </ul> 
                                     <a href="https://www.remichel.com/Webservices" className="btn btn-light" target="_blank" rel="noreferrer">Live Project</a>
                             </div>
@@ -59,8 +61,8 @@ function Card() {
                     <img className="card-img-top img-fluid pt-2" onMouseEnter={() => setSecondImageIsHovering(true)} onMouseLeave={() => setSecondImageIsHovering(false)} src={secondImageisHovering ? '/images/airtemp_site_gif.gif': '/images/airtemp_cover.png'} alt="Card image cap" style={{ height: '20rem', width: '22.5rem'}}/>
                 </div>
                 <div className="col-12 col-md-6 col-lg-12 py-4 text-center">
-                    <h5 className="text-center">Airtemp</h5>
-                    <p className='text-center container'>Airtemp indoor comfort systems offers a user-friendly interface for homeowners and businesses to search, research, and connect with certified dealers for HVAC installations. Thousands of visitors daily rely on the web application to find the perfect indoor comfort solution.</p>
+                    <h5 className="text-center">Airtemp – HVAC Website & SEO Support</h5>
+                    <p className='text-center container'>Maintained and improved a high-traffic HVAC website focused on helping users research products and connect with certified dealers. Contributed to website updates, SEO enhancements, and ongoing support to improve usability and performance.</p>
                     <div className="text-center">
                         <button type="button" class="btn btn-light" data-toggle="modal" data-target='#airtemp'>
                         Project Info
@@ -84,12 +86,14 @@ function Card() {
                                             <img className="card-img-top img-fluid pt-2" src="/images/at_before_after.jpg" alt="Card image cap" />
                                         </div>
                                     </div>
-                                    <p className="card-text text-dark">"Airtemp indoor comfort systems are designed, assembled and repeatedly and thoroughly tested in North America."</p>
-                                    <h5>Work Done:</h5>
+                                    <h5>Overview:</h5>
+                                    <p className="card-text text-dark">Airtemp provides indoor comfort solutions through a web platform that connects homeowners and businesses with HVAC products and certified dealers.</p>
+                                    <h5>Work Performed:</h5>
                                     <ul className="text-dark">
-                                        <li>"Upgraded App to fully responsive"</li>
-                                        <li>"SEO Improvements and Management"</li>
-                                        <li>"Ongoing Theme Maintenance & Support"</li>
+                                        <li>Updated website layout to ensure responsive design across desktop and mobile devices</li>
+                                        <li>Implemented SEO improvements including page structure, metadata, and content optimization</li>
+                                        <li>Performed ongoing theme maintenance and front-end updates in a live production environment</li>
+                                        <li>Assisted with content updates and formatting using HTML, CSS, and CMS tools</li>
                                     </ul> 
                                     <a href="https://airtemp.com/" className="btn btn-light" target="_blank" rel="noreferrer">Live Project</a>
                             </div>
